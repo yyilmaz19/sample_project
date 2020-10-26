@@ -1,0 +1,441 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-22T22:14:07.638Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7882530731,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User lands the Contax.com website, user should see the menu options",
+        "description": "",
+        "id": "contax-ui-testing;user-lands-the-contax.com-website--user-should-see-the-menu-options",
+        "after": [
+          {
+            "result": {
+              "duration": 258026683,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4623133240,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User on the \"contax_home_page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contax_home_page\"",
+                  "offset": 12
+                }
+              ],
+              "location": "UI_Steps.user_on_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10563376,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The title of page should be \"CONTAX SAP Partner\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CONTAX SAP Partner\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UI_Steps.the_title_of_page_should_be(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 255571614,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user should see following menu options",
+            "match": {
+              "location": "UI_Steps.the_user_should_see_following_menu_options(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ABOUT US",
+                  "SOLUTIONS",
+                  "SERVICES",
+                  "KNOWLEDGE CENTER",
+                  "CAREERS",
+                  "CONTACT US"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-22T22:14:20.782Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2544473718,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User is able to see expected Contax locations from Contact Us Page",
+        "description": "",
+        "id": "contax-ui-testing;user-is-able-to-see-expected-contax-locations-from-contact-us-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 190038715,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4086479669,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User on the \"contax_home_page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contax_home_page\"",
+                  "offset": 12
+                }
+              ],
+              "location": "UI_Steps.user_on_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 946570363,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click the Contact Us page",
+            "match": {
+              "location": "UI_Steps.click_the_Contact_Us_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 185167415,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "See the Contact Form",
+            "match": {
+              "location": "UI_Steps.see_the_Contact_Form()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 360034457,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify the \"Chicago, Illinois\" and its \"311 W Superior Street\" as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chicago, Illinois\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"311 W Superior Street\"",
+                  "offset": 39
+                }
+              ],
+              "location": "UI_Steps.verify_the_and_its_as_expected(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-22T22:14:29.117Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2387663077,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User is able to see expected Contax locations from Contact Us Page",
+        "description": "",
+        "id": "contax-ui-testing;user-is-able-to-see-expected-contax-locations-from-contact-us-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 220727222,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3683738154,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User on the \"contax_home_page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contax_home_page\"",
+                  "offset": 12
+                }
+              ],
+              "location": "UI_Steps.user_on_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 590103933,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click the Contact Us page",
+            "match": {
+              "location": "UI_Steps.click_the_Contact_Us_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61321239,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "See the Contact Form",
+            "match": {
+              "location": "UI_Steps.see_the_Contact_Form()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 377301875,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify the \"Toronto, Ontario\" and its \"893 Yonge Street\" as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Toronto, Ontario\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"893 Yonge Street\"",
+                  "offset": 38
+                }
+              ],
+              "location": "UI_Steps.verify_the_and_its_as_expected(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-22T22:14:36.453Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2450313705,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User is able to see expected Contax locations from Contact Us Page",
+        "description": "",
+        "id": "contax-ui-testing;user-is-able-to-see-expected-contax-locations-from-contact-us-page;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 219407340,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3978979779,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User on the \"contax_home_page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contax_home_page\"",
+                  "offset": 12
+                }
+              ],
+              "location": "UI_Steps.user_on_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 604419390,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click the Contact Us page",
+            "match": {
+              "location": "UI_Steps.click_the_Contact_Us_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57469371,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "See the Contact Form",
+            "match": {
+              "location": "UI_Steps.see_the_Contact_Form()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 360392921,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify the \"Utrecht\" and its \"Hamburgerstraat 28a\" as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Utrecht\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Hamburgerstraat 28a\"",
+                  "offset": 29
+                }
+              ],
+              "location": "UI_Steps.verify_the_and_its_as_expected(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Contax UI Testing",
+    "description": "",
+    "id": "contax-ui-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Contax.feature",
+    "tags": [
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

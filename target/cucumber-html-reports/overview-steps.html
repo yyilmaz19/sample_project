@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>22 Oct 2020, 15:46</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">API_Steps.headers_accepts_content_type_as(String)</td>
+              <td>15</td>
+              <td class="duration" data-value="87312832">0.087</td>
+              <td class="duration" data-value="87312832">1.270</td>
+              <td class="duration" data-value="1309692480">1.309</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.select_for_the_authorization_filters_as_a_API_key(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="922100">0.000</td>
+              <td class="duration" data-value="922100">0.001</td>
+              <td class="duration" data-value="2766301">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.user_selects_pets_with(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="3730308">0.003</td>
+              <td class="duration" data-value="3730308">0.008</td>
+              <td class="duration" data-value="11190924">0.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.user_sends_DELETE_request_to(String,Integer)</td>
+              <td>3</td>
+              <td class="duration" data-value="628377696">0.628</td>
+              <td class="duration" data-value="628377696">0.639</td>
+              <td class="duration" data-value="1885133088">1.885</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.user_sends_GET_request_to(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="638340364">0.638</td>
+              <td class="duration" data-value="638340364">0.653</td>
+              <td class="duration" data-value="1915021094">1.915</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.user_sends_GET_request_to(String,int)</td>
+              <td>3</td>
+              <td class="duration" data-value="654764031">0.654</td>
+              <td class="duration" data-value="654764031">0.666</td>
+              <td class="duration" data-value="1964292094">1.964</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.user_sends_POST_request_to(String,String,String&gt;)</td>
+              <td>3</td>
+              <td class="duration" data-value="941419134">0.941</td>
+              <td class="duration" data-value="941419134">1.504</td>
+              <td class="duration" data-value="2824257403">2.824</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.user_sends_POST_request_to_as_an(String,String,String&gt;)</td>
+              <td>3</td>
+              <td class="duration" data-value="639588776">0.639</td>
+              <td class="duration" data-value="639588776">0.646</td>
+              <td class="duration" data-value="1918766329">1.918</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.user_verifies_that_response_content_type_is(String)</td>
+              <td>12</td>
+              <td class="duration" data-value="766617">0.000</td>
+              <td class="duration" data-value="766617">0.001</td>
+              <td class="duration" data-value="9199407">0.009</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">API_Steps.user_verifies_that_response_status_code_is(int)</td>
+              <td>15</td>
+              <td class="duration" data-value="952008">0.000</td>
+              <td class="duration" data-value="952008">0.003</td>
+              <td class="duration" data-value="14280125">0.014</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.setUp()</td>
+              <td>19</td>
+              <td class="duration" data-value="1853769429">1.853</td>
+              <td class="duration" data-value="1853769429">5.161</td>
+              <td class="duration" data-value="35221619168">35.221</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.tearDown(Scenario)</td>
+              <td>19</td>
+              <td class="duration" data-value="113222142">0.113</td>
+              <td class="duration" data-value="113222142">0.180</td>
+              <td class="duration" data-value="2151220701">2.151</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UI_Steps.click_the_Contact_Us_page()</td>
+              <td>3</td>
+              <td class="duration" data-value="564599717">0.564</td>
+              <td class="duration" data-value="564599717">0.568</td>
+              <td class="duration" data-value="1693799152">1.693</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UI_Steps.see_the_Contact_Form()</td>
+              <td>3</td>
+              <td class="duration" data-value="38475955">0.038</td>
+              <td class="duration" data-value="38475955">0.040</td>
+              <td class="duration" data-value="115427865">0.115</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UI_Steps.the_title_of_page_should_be(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5467356">0.005</td>
+              <td class="duration" data-value="5467356">0.005</td>
+              <td class="duration" data-value="5467356">0.005</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UI_Steps.the_user_should_see_following_menu_options(String&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="152327121">0.152</td>
+              <td class="duration" data-value="152327121">0.152</td>
+              <td class="duration" data-value="152327121">0.152</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UI_Steps.user_on_the(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="3676884788">3.676</td>
+              <td class="duration" data-value="3676884788">4.111</td>
+              <td class="duration" data-value="14707539152">14.707</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">UI_Steps.verify_the_and_its_as_expected(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="278031369">0.278</td>
+              <td class="duration" data-value="278031369">0.296</td>
+              <td class="duration" data-value="834094109">0.834</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>116</td>
+            <td class="duration">0.575</td>
+            <td class="duration">35.221</td>
+            <td class="duration">1:6.736</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

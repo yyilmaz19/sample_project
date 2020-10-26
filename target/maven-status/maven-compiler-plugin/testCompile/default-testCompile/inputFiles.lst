@@ -1,0 +1,15 @@
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/pages/Account.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/utilities/DBUtility.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/pojos/pets/Category.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/utilities/Driver.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/runners/CukesRunner.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/pojos/pets/Pets.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/pages/MainPage.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/pojos/order/Order.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/pojos/pets/Tag.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/step_definitions/Hooks.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/utilities/BrowserUtils.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/utilities/APIUtility.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/utilities/ConfigurationReader.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/step_definitions/API_Steps.java
+/Users/yasinyilmaz/IdeaProjects/sample_project/src/test/java/com/sample/step_definitions/UI_Steps.java
