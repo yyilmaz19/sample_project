@@ -9,6 +9,8 @@ import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 import java.util.List;
@@ -16,6 +18,9 @@ import java.util.List;
 public class UI_Steps {
     Account account=new Account();
     MainPage mainPage=new MainPage();
+    Logger logger= LoggerFactory.getLogger(UI_Steps.class);
+
+
 
     @Given("User on the {string}")
     public void user_on_the(String page) throws InterruptedException {
@@ -23,6 +28,8 @@ public class UI_Steps {
         BrowserUtils.waitFor(1);
         Driver.get().manage().deleteAllCookies();
         Driver.get().manage().window().maximize();
+        logger.info("User lands to home page {}",ConfigurationReader.get(page));
+        logger.info("Step is done");
     }
 
     @Then("User clicks the Sign in button")
@@ -49,16 +56,20 @@ public class UI_Steps {
     @Then("The title of page should be {string}")
     public void the_title_of_page_should_be(String title) {
         Assert.assertEquals(Driver.get().getTitle(),title);
+        logger.info("Title of page is {} verified",title);
     }
 
     @Then("the user should see following menu options")
     public void the_user_should_see_following_menu_options (List<String> menuOptions) {
 
-        BrowserUtils.waitForVisibility(mainPage.menuoptions,5);
+        BrowserUtils.waitForVisibility(mainPage.surepayMenu,5);
 
-        List<String> actualMenuOptions = BrowserUtils.getElementsText(Driver.get().findElements(By.xpath("//*[@class='sf-menu sf-js-enabled']/li/a")));
-
+        List<String> actualMenuOptions = BrowserUtils.getElementsText(Driver.get().findElements(By.xpath("//*[@id='menu-hoofdmenu']/li/a")));
+        System.out.println("actualMenuOptions = " + actualMenuOptions);
+        actualMenuOptions.remove(3);
         Assert.assertEquals(menuOptions,actualMenuOptions);
+
+        logger.info("All expected menu options verified");
 
 
     }

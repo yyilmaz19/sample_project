@@ -10,7 +10,8 @@ public class MainPage {
     @FindBy (xpath = "//*[@class='sf-menu sf-js-enabled']/li/a")
     public WebElement menuoptions;
 
-
+    @FindBy(xpath = "//*[@id='menu-hoofdmenu']/li/a")
+    public WebElement surepayMenu;
 
 
 

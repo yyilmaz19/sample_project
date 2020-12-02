@@ -29,7 +29,7 @@ public class Hooks {
 //        Driver.closeDriver();
 //    }
 
-    @Before("ui or @regression or @smoke or @wip")
+    @Before("@ui or (@ui and @regression and @smoke and @wip)")
     public void setUp(){
         System.out.println("\tthis is coming from BEFORE");
         Driver.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -37,7 +37,7 @@ public class Hooks {
     }
 
 
-    @After("ui or @regression or @smoke or @wip")
+    @After("@ui or (@ui and @regression and @smoke and @wip)")
     public void tearDown(Scenario scenario){
 
         if (scenario.isFailed()){
