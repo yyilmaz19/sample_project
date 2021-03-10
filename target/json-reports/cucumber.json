@@ -3,1757 +3,377 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+        "start_timestamp": "2021-02-05T13:20:39.193Z",
+        "before": [
           {
             "result": {
-              "duration": 6944440043,
+              "duration": 6661584454,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
+              "location": "Hooks.setUp()"
+            }
           }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:40.732Z",
-        "line": 17,
-        "name": "User should be able to create a pet by given information",
+        ],
+        "line": 12,
+        "name": "User lands the website, try to continue with an invalid email or username and gets the error message",
         "description": "",
-        "id": "api-test;user-should-be-able-to-create-a-pet-by-given-information;;2",
+        "id": "amazon-ui-login-testing;user-lands-the-website--try-to-continue-with-an-invalid-email-or-username-and-gets-the-error-message;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 178467188,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4468481568,
+              "duration": 3299009150,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User sends POST request to \"pet\"",
+            "line": 5,
+            "name": "User on the \"ui_page\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"pet\"",
-                  "offset": 27
+                  "val": "\"ui_page\"",
+                  "offset": 12
                 }
               ],
-              "location": "API_Steps.user_sends_POST_request_to(String,String,String\u003e)"
+              "location": "UI_Steps.user_on_the(String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "id",
-                  "5574"
-                ]
-              },
-              {
-                "cells": [
-                  "name",
-                  "fino"
-                ]
-              },
-              {
-                "cells": [
-                  "status",
-                  "available"
-                ]
-              }
-            ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 12197875,
+              "duration": 981188435,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User verifies that response status code is 200",
+            "line": 6,
+            "name": "User clicks the Sign in button",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
+              "location": "UI_Steps.user_clicks_the_Sign_in_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 754667,
+              "duration": 11209305,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User verifies that response content type is \"application/json\"",
+            "line": 7,
+            "name": "The title of page should be \"Amazon Sign-In\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 33730873,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:52.530Z",
-        "line": 18,
-        "name": "User should be able to create a pet by given information",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-create-a-pet-by-given-information;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 802910717,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User sends POST request to \"pet\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet\"",
-                  "offset": 27
-                }
-              ],
-              "location": "API_Steps.user_sends_POST_request_to(String,String,String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "id",
-                  "9976"
-                ]
-              },
-              {
-                "cells": [
-                  "name",
-                  "doggy"
-                ]
-              },
-              {
-                "cells": [
-                  "status",
-                  "pending"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1800158,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 618496,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12557521,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:53.421Z",
-        "line": 19,
-        "name": "User should be able to create a pet by given information",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-create-a-pet-by-given-information;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 811177731,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User sends POST request to \"pet\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet\"",
-                  "offset": 27
-                }
-              ],
-              "location": "API_Steps.user_sends_POST_request_to(String,String,String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "id",
-                  "9056"
-                ]
-              },
-              {
-                "cells": [
-                  "name",
-                  "poesy"
-                ]
-              },
-              {
-                "cells": [
-                  "status",
-                  "sold"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 979100,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1491971,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12651427,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:54.269Z",
-        "line": 28,
-        "name": "User should be able to reach pet information by id",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-reach-pet-information-by-id;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 890554881,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User sends GET request to \"pet/\"5574",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet/\"",
-                  "offset": 26
-                },
-                {
-                  "val": "5574",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.user_sends_GET_request_to(String,int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4910136,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1557024,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 8909593,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:55.198Z",
-        "line": 29,
-        "name": "User should be able to reach pet information by id",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-reach-pet-information-by-id;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 695380161,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User sends GET request to \"pet/\"9476",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet/\"",
-                  "offset": 26
-                },
-                {
-                  "val": "9476",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.user_sends_GET_request_to(String,int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2710613,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User verifies that response status code is 404",
-            "match": {
-              "arguments": [
-                {
-                  "val": "404",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 733169,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6881085,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:55.926Z",
-        "line": 30,
-        "name": "User should be able to reach pet information by id",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-reach-pet-information-by-id;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 736637072,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User sends GET request to \"pet/\"9976",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet/\"",
-                  "offset": 26
-                },
-                {
-                  "val": "9976",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.user_sends_GET_request_to(String,int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2187824,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1620509,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 11553432,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:56.687Z",
-        "line": 41,
-        "name": "User should be able to find all pets by status",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-find-all-pets-by-status;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 738795924,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "User sends a GET request to \"pet/findByStatus\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet/findByStatus\"",
+                  "val": "\"Amazon Sign-In\"",
                   "offset": 28
                 }
               ],
-              "location": "API_Steps.user_sends_GET_request_to(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22562898,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "User selects pets with \"available\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"available\"",
-                  "offset": 23
-                }
-              ],
-              "location": "API_Steps.user_selects_pets_with(String)"
+              "location": "UI_Steps.the_title_of_page_should_be(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 767075,
+              "duration": 1932541530,
               "status": "passed"
             },
-            "line": 37,
-            "name": "User verifies that response status code is 200",
+            "line": 8,
+            "name": "User enters the invalid \"alihaja@gmail.com\" to sign in",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 43
+                  "val": "\"alihaja@gmail.com\"",
+                  "offset": 24
                 }
               ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
+              "location": "UI_Steps.user_enters_the_invalid_to_sign_in(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 803285,
+              "duration": 5045910632,
               "status": "passed"
             },
-            "line": 38,
-            "name": "User verifies that response content type is \"application/json\"",
+            "line": 9,
+            "name": "User gets the \"There was a problem\" message",
             "match": {
               "arguments": [
                 {
-                  "val": "\"application/json\"",
-                  "offset": 44
+                  "val": "\"There was a problem\"",
+                  "offset": 14
                 }
               ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
+              "location": "UI_Steps.user_gets_the_message(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
+            "name": "@ui"
           }
         ]
       },
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+        "start_timestamp": "2021-02-05T13:20:57.455Z",
+        "before": [
           {
             "result": {
-              "duration": 6345229,
+              "duration": 1605194419,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
+              "location": "Hooks.setUp()"
+            }
           }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:57.483Z",
-        "line": 42,
-        "name": "User should be able to find all pets by status",
+        ],
+        "line": 13,
+        "name": "User lands the website, try to continue with an invalid email or username and gets the error message",
         "description": "",
-        "id": "api-test;user-should-be-able-to-find-all-pets-by-status;;3",
+        "id": "amazon-ui-login-testing;user-lands-the-website--try-to-continue-with-an-invalid-email-or-username-and-gets-the-error-message;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 130597471,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 900702690,
+              "duration": 9863272957,
               "status": "passed"
             },
-            "line": 35,
-            "name": "User sends a GET request to \"pet/findByStatus\"",
+            "line": 5,
+            "name": "User on the \"ui_page\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"pet/findByStatus\"",
+                  "val": "\"ui_page\"",
+                  "offset": 12
+                }
+              ],
+              "location": "UI_Steps.user_on_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 813165390,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the Sign in button",
+            "match": {
+              "location": "UI_Steps.user_clicks_the_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10440027,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The title of page should be \"Amazon Sign-In\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Amazon Sign-In\"",
                   "offset": 28
                 }
               ],
-              "location": "API_Steps.user_sends_GET_request_to(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3080009,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "User selects pets with \"pending\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pending\"",
-                  "offset": 23
-                }
-              ],
-              "location": "API_Steps.user_selects_pets_with(String)"
+              "location": "UI_Steps.the_title_of_page_should_be(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1873588,
+              "duration": 1764569249,
               "status": "passed"
             },
-            "line": 37,
-            "name": "User verifies that response status code is 200",
+            "line": 8,
+            "name": "User enters the invalid \"agshgshg@hgh.hg\" to sign in",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 43
+                  "val": "\"agshgshg@hgh.hg\"",
+                  "offset": 24
                 }
               ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
+              "location": "UI_Steps.user_enters_the_invalid_to_sign_in(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1024392,
+              "duration": 5042737241,
               "status": "passed"
             },
-            "line": 38,
-            "name": "User verifies that response content type is \"application/json\"",
+            "line": 9,
+            "name": "User gets the \"There was a problem\" message",
             "match": {
               "arguments": [
                 {
-                  "val": "\"application/json\"",
-                  "offset": 44
+                  "val": "\"There was a problem\"",
+                  "offset": 14
                 }
               ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
+              "location": "UI_Steps.user_gets_the_message(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 26640754,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:58.416Z",
-        "line": 43,
-        "name": "User should be able to find all pets by status",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-find-all-pets-by-status;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 813185410,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "User sends a GET request to \"pet/findByStatus\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet/findByStatus\"",
-                  "offset": 28
-                }
-              ],
-              "location": "API_Steps.user_sends_GET_request_to(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1790582,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "User selects pets with \"sold\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sold\"",
-                  "offset": 23
-                }
-              ],
-              "location": "API_Steps.user_selects_pets_with(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1090106,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1396633,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3600644,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:22:59.280Z",
-        "line": 55,
-        "name": "User should be able to delete an existing pet with API key",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-delete-an-existing-pet-with-api-key;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 831295842,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "User sends DELETE request to \"pet/\"5574",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet/\"",
-                  "offset": 29
-                },
-                {
-                  "val": "5574",
-                  "offset": 35
-                }
-              ],
-              "location": "API_Steps.user_sends_DELETE_request_to(String,Integer)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2341414,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "Select \"special-key\" for the authorization filters as a API key",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"special-key\"",
-                  "offset": 7
-                }
-              ],
-              "location": "API_Steps.select_for_the_authorization_filters_as_a_API_key(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1260754,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1991327,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:23:00.136Z",
-        "line": 56,
-        "name": "User should be able to delete an existing pet with API key",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-delete-an-existing-pet-with-api-key;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 763531139,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "User sends DELETE request to \"pet/\"370012",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet/\"",
-                  "offset": 29
-                },
-                {
-                  "val": "370012",
-                  "offset": 35
-                }
-              ],
-              "location": "API_Steps.user_sends_DELETE_request_to(String,Integer)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1111486,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "Select \"special-key\" for the authorization filters as a API key",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"special-key\"",
-                  "offset": 7
-                }
-              ],
-              "location": "API_Steps.select_for_the_authorization_filters_as_a_API_key(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1714596,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "User verifies that response status code is 404",
-            "match": {
-              "arguments": [
-                {
-                  "val": "404",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1858758,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:23:00.909Z",
-        "line": 57,
-        "name": "User should be able to delete an existing pet with API key",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-delete-an-existing-pet-with-api-key;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 805620015,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "User sends DELETE request to \"pet/\"9056",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pet/\"",
-                  "offset": 29
-                },
-                {
-                  "val": "9056",
-                  "offset": 35
-                }
-              ],
-              "location": "API_Steps.user_sends_DELETE_request_to(String,Integer)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7360688,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "Select \"special-key\" for the authorization filters as a API key",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"special-key\"",
-                  "offset": 7
-                }
-              ],
-              "location": "API_Steps.select_for_the_authorization_filters_as_a_API_key(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3924878,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12615180,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:23:01.733Z",
-        "line": 71,
-        "name": "User should be able to place orders for a pet",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-place-orders-for-a-pet;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 767364071,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "User sends POST request to as an \"store/order\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"store/order\"",
-                  "offset": 33
-                }
-              ],
-              "location": "API_Steps.user_sends_POST_request_to_as_an(String,String,String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "petId",
-                  "9976"
-                ]
-              },
-              {
-                "cells": [
-                  "quantity",
-                  "1"
-                ]
-              },
-              {
-                "cells": [
-                  "status",
-                  "placed"
-                ]
-              },
-              {
-                "cells": [
-                  "complete",
-                  "true"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1808070,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 679475,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7872726,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:23:02.544Z",
-        "line": 72,
-        "name": "User should be able to place orders for a pet",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-place-orders-for-a-pet;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 789490292,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "User sends POST request to as an \"store/order\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"store/order\"",
-                  "offset": 33
-                }
-              ],
-              "location": "API_Steps.user_sends_POST_request_to_as_an(String,String,String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "petId",
-                  "9977"
-                ]
-              },
-              {
-                "cells": [
-                  "quantity",
-                  "2"
-                ]
-              },
-              {
-                "cells": [
-                  "status",
-                  "approved"
-                ]
-              },
-              {
-                "cells": [
-                  "complete",
-                  "true"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 775626,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 698842,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 10047671,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Headers accepts content type as \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 32
-                }
-              ],
-              "location": "API_Steps.headers_accepts_content_type_as(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-19T12:23:03.346Z",
-        "line": 73,
-        "name": "User should be able to place orders for a pet",
-        "description": "",
-        "id": "api-test;user-should-be-able-to-place-orders-for-a-pet;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 781383976,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "User sends POST request to as an \"store/order\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"store/order\"",
-                  "offset": 33
-                }
-              ],
-              "location": "API_Steps.user_sends_POST_request_to_as_an(String,String,String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "petId",
-                  "9978"
-                ]
-              },
-              {
-                "cells": [
-                  "quantity",
-                  "1"
-                ]
-              },
-              {
-                "cells": [
-                  "status",
-                  "delivered"
-                ]
-              },
-              {
-                "cells": [
-                  "complete",
-                  "true"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6423300,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "User verifies that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_status_code_is(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 917981,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "User verifies that response content type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 44
-                }
-              ],
-              "location": "API_Steps.user_verifies_that_response_content_type_is(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@regression"
+            "name": "@ui"
           }
         ]
       }
     ],
-    "name": "API Test",
+    "name": "Amazon UI Login Testing",
     "description": "",
-    "id": "api-test",
+    "id": "amazon-ui-login-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/API.feature",
+    "uri": "file:src/test/resources/features/Amazon.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-05T13:21:16.695Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1542943571,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User lands the humaner.org website, user should see the menu options",
+        "description": "",
+        "id": "humaner-ui-testing;user-lands-the-humaner.org-website--user-should-see-the-menu-options",
+        "after": [
+          {
+            "result": {
+              "duration": 96833551,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4294007222,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User on the \"humaner_home_page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"humaner_home_page\"",
+                  "offset": 12
+                }
+              ],
+              "location": "UI_Steps.user_on_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6127973,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The title of page should be \"HumaneR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HumaneR\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UI_Steps.the_title_of_page_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 174761101,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user should see following menu options",
+            "match": {
+              "location": "UI_Steps.the_user_should_see_following_menu_options(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "HOME",
+                  "ABOUT US",
+                  "FOR THE REFUGEES",
+                  "GET INVOLVED",
+                  "PARTNERS",
+                  "RESOURCES",
+                  "CONTACT"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "HumaneR UI Testing",
+    "description": "",
+    "id": "humaner-ui-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UI.feature",
     "tags": [
       {
-        "name": "@api",
+        "name": "@ui",
         "type": "Tag",
         "location": {
           "line": 1,

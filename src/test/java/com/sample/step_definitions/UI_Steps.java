@@ -8,7 +8,6 @@ import com.sample.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -62,13 +61,12 @@ public class UI_Steps {
     @Then("the user should see following menu options")
     public void the_user_should_see_following_menu_options (List<String> menuOptions) {
 
-        BrowserUtils.waitForVisibility(mainPage.surepayMenu,5);
+        BrowserUtils.waitForVisibility(mainPage.menuoptions,5);
 
-        List<String> actualMenuOptions = BrowserUtils.getElementsText(Driver.get().findElements(By.xpath("//*[@id='menu-hoofdmenu']/li/a")));
+        List<String> actualMenuOptions = BrowserUtils.getElementsText(Driver.get().findElements(By.xpath("//*[@role='menu']/li/a")));
         System.out.println("actualMenuOptions = " + actualMenuOptions);
-        actualMenuOptions.remove(3);
         Assert.assertEquals(menuOptions,actualMenuOptions);
-
+        System.out.println(actualMenuOptions);
         logger.info("All expected menu options verified");
 
 
@@ -107,6 +105,7 @@ public class UI_Steps {
         }
         Assert.assertTrue(isContainaddress);
     }
+
 
 
 

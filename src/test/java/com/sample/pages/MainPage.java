@@ -7,11 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
 
-    @FindBy (xpath = "//*[@class='sf-menu sf-js-enabled']/li/a")
+    @FindBy (xpath = "//*[@role='menu']/li/a")
     public WebElement menuoptions;
 
-    @FindBy(xpath = "//*[@id='menu-hoofdmenu']/li/a")
-    public WebElement surepayMenu;
 
 
 

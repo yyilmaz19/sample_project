@@ -61,6 +61,7 @@ public class API_Steps {
         pet.setStatus(pets.get("status"));
         System.out.println("path = " + baseURI+path);
         response = requestSpecification.body(pet.toString()).when().put(baseURI+path);
+
     }
 
     @Given("User sends a GET request to {string}")
